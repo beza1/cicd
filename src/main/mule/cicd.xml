@@ -13,6 +13,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicdFlow" doc:id="10e86ecf-f41e-4c9c-a7c6-9b36fc4b3e6c" >
 		<http:listener doc:name="Listener" doc:id="9e5bf8dd-ce34-4575-a1e9-7e3fd1b06ed3" config-ref="HTTP_Listener_config" path="/{city}"/>
 		<http:request method="GET" doc:name="Request" doc:id="2576d498-2b45-4883-9f8b-54d2409b2530" config-ref="HTTP_Request_configuration" path="#[attributes.uriParams.city]"/>
-		<logger level="INFO" doc:name="Logger" doc:id="9e5dd608-e3eb-448b-8f0f-8e7c58b506f3" message="this is to test if it's automatically coming"/>
 	</flow>
 </mule>
