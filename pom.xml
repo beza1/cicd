@@ -33,7 +33,24 @@
 				<configuration>
 				</configuration>
 			</plugin>
-			
+			<plugin>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>mule-maven-plugin</artifactId>
+  <version>4.3.0</version>
+  <extensions>true</extensions>
+  <configuration>
+    <cloudHubDeployment>
+    
+      <muleVersion>4.3.0</muleVersion>
+      <username>bezwit122</username>
+      <password>Harar123</password>
+      <applicationName>cicdpipline</applicationName>
+      <environment>Sandbox</environment>
+      <workers>1</workers>
+      <workerType>Micro</workerType>
+    </cloudHubDeployment>
+  </configuration>
+</plugin>
 		</plugins>
 	</build>
 
